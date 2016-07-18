@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="level">Levels</string>
+    <string name="playing_now">Playing Now</string>
+    <string name="history">History</string>
+    <string name="search">Search</string>
+    <string name="instrument">Instrument</string>
+    <string name="history_explanation" translatable="false">History. Allow the user at a glance to see what it has been practicing during the last week,
+or more if it scrolls down. By date, songs played, recorded, last score.
+
+ I will need a database where to store the information regarding last 10 or 20
+songs played.
+
+They will be ordered by Last date, times played, times recorded, last score, mean score.
+
+I will use the SQLite library, and will need to include in different part of the application
+code to register the relevant information that I will retrieve here with a query
+ https://developer.android.com/training/basics/data-storage/databases.html</string>
+    <string name="main">Home</string>
+    <string name="instrument_explanation" translatable="false">Instrument explanation.
+
+For each new instrument, a level guide must created. I will need a newInstrument
+ button, and an Activity where to enter the information.
+
+You can add levels but I will assume that Instruments and Levels are already
+created as in Europe at least they are standarized.
+
+So the app will already have a list of instruments with the levels already in place.
+
+However the user can select from here a default instrument so when it access
+the rest of the Activities will filter by the default instrument.
+
+The selection will be written to the SQLite database by the Onclick method or @override
+OnClick method from the SetOnClick call back method.</string>
+    <string name="new_level">New Level</string>
+    <string name="main_explanation" translatable="false">App vision. This apps allows the user for each learning level on an instrument
+to save practice musical pieces and sheets, to read, listen and finally play  and
+record them to track its progress or someonelse to rate its performance.</string>
+    <string name="playing_now_explanation" translatable="false">In this activity you can view the musical sheet and either listen to the piece
+or record yourself playing it.
+
+There is third button where you can have your performance appraised.
+Ideally we could have an algorith to compare the original recording with
+the user\'s performance. However instead you can send it to other user\'s
+with a level up to do it for you.
+
+I will add a new Activity named Ratings where you can see people who have
+requested you to rate their performance.
+
+The main technial hurdle is to learn to use the library that allow to play, and
+record mp3.
+
+I have found the following links:
+
+https://developer.android.com/guide/topics/media/exoplayer.html
+https://developer.android.com/reference/android/media/MediaPlayer.html
+https://developer.android.com/guide/topics/media/mediaplayer.html
+https://developer.android.com/guide/topics/media/audio-capture.html
+
+As for having other user rate I  think the same activity can be used, and
+combined with the use the SQLite library as explained in other activities
+record the rating from a TextField.
+
+</string>
+    <string name="rating">Rating</string>
+    <string name="level_explanation" translatable="false">Level explanation. For a selecter instrument it allows to see the differente
+master levels according to the official grading system.
+
+By clicking on any level a list of all songs available at this level appear.
+
+Again the SQLite Library will be used to store the differente levels and retrieve
+them when calling accessing each one of them.
+
+On the screen can be seen which instrument has been selected from the
+InstrumentActivity.</string>
+    <string name="activity">Activity</string>
+    <string name="rating_explanation" translatable="false">Rating explanation. On this activity it can be seen the requested rating from
+ other users showing the piece to be rated.
+
+This a list with all the ratings requested. There\'s a limit of ten. It\'s ordered by
+date. When a rating is selected it takes the user to an Activity similar to Playing
+Now except that instead of Record there is a button for Rate where a number
+from 1 to 10 must be chosen.</string>
+    <string name="search_explanation" translatable="false">Search explanation. Allow the user to find any particular musical sheet by
+title and author.
+
+This will use SQLite library to do a query on the songs list. There will be a table
+in the database with all the songs, with title, author, level, and instrument, as
+well as a link to the location of the mp3 file.</string>
+</resources>

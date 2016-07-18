@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="level">Niveles</string>
+    <string name="playing_now">Practicando ahora</string>
+    <string name="history">Historia</string>
+    <string name="search">Búsqueda</string>
+    <string name="instrument">Instrumento</string>
+    <string name="main">Principal</string>
+    <string name="new_level">+ Nivel</string>
+    <string name="rating">Valoración</string>
+    <string name="activity">A</string>
+</resources>

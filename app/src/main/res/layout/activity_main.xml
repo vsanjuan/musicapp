@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <TextView
+    android:id="@+id/levels"
+    style="@style/CategoryStyle"
+    android:background="@color/category_levels"
+    android:text="@string/level" />
+
+    <TextView
+        android:id="@+id/playing_now"
+        style="@style/CategoryStyle"
+        android:background="@color/category_playing_now"
+        android:text="@string/playing_now" />
+
+    <TextView
+        android:id="@+id/history"
+        style="@style/CategoryStyle"
+        android:background="@color/category_history"
+        android:text="@string/history" />
+
+    <TextView
+        android:id="@+id/search"
+        style="@style/CategoryStyle"
+        android:background="@color/category_search"
+        android:text="@string/search" />
+
+    <TextView
+        android:id="@+id/instruments"
+        style="@style/CategoryStyle"
+        android:background="@color/category_instrument"
+        android:text="@string/instrument" />
+
+    <TextView
+        android:id="@+id/ratings"
+        style="@style/CategoryStyle"
+        android:background="@color/category_rating"
+        android:text="@string/rating" />
+
+    <TextView
+        android:id="@id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_paragraph"
+        android:text="@string/main_explanation"/>
+
+</LinearLayout>
